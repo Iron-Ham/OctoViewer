@@ -1,8 +1,8 @@
 //
-//  AppDelegate.swift
+//  GlobalFunctions.swift
 //  OctoViewer
 //
-//  Created by Hesham Salman on 5/20/17.
+//  Created by Hesham Salman on 5/24/17.
 //  Copyright © 2017 Hesham Salman
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,13 +16,20 @@
 //  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
-//
 
-import UIKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+import Moya
+import ReachabilitySwift
+import ReactiveSwift
+import Result
 
-  var window: UIWindow?
+private let reachabilityManager = Reachability()
 
+func connectedToInternetOrStubbing() -> SignalProducer<Bool, NoError> {
+  let stubResponseProperty: MutableProperty<Bool> = MutableProperty(APIKeys.sharedKeys.stubResponses)
+  guard let online = reachabilityManager?.isReachable else {
+    return stubResponseProperty.producer
+  }
+  stubResponseProperty.value = stubResponseProperty.value || online
+  return stubResponseProperty.producer
 }

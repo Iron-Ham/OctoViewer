@@ -21,7 +21,7 @@ import RxSwift
 import Moya
 
 protocol AppDelegateViewModelInputs {
-  func application(app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any]) -> Bool
+  func application(app: UIApplicationProtocol, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any]) -> Bool
   var provider: RxMoyaProvider<GitHubService> { get }
 
 }
@@ -43,7 +43,7 @@ final class AppDelegateViewModel: AppDelegateViewModelType, AppDelegateViewModel
 
   var provider: RxMoyaProvider<GitHubService>
 
-  func application(app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+  func application(app: UIApplicationProtocol, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
     let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false)
     if let urlComponents = urlComponents,
       let items = urlComponents.queryItems,

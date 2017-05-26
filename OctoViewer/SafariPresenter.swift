@@ -17,15 +17,21 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-
 import Foundation
 import SafariServices
 
 class SafariPresenter: NSObject {
+
+  let application: UIApplicationProtocol
+
+  init(app: UIApplicationProtocol = UIApplication.shared) {
+    application = app
+  }
+
   func safariViewController(for url: URL) {
     let controller = SFSafariViewController(url: url)
     controller.delegate = self
-    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    application.open(url, options: [:], completionHandler: nil)
   }
 }
 

@@ -30,6 +30,11 @@
 		DC09F59A1ED8BA300031B510 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5991ED8BA300031B510 /* StyleGuide.swift */; };
 		DC09F59C1ED8BFCD0031B510 /* OctoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F59B1ED8BFCD0031B510 /* OctoTabBarController.swift */; };
 		DC09F59E1ED8C2E60031B510 /* LaunchViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F59D1ED8C2E60031B510 /* LaunchViewModelSpec.swift */; };
+		DC09F5A01ED8E2680031B510 /* MockSafariPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F59F1ED8E2680031B510 /* MockSafariPresenter.swift */; };
+		DC1FD4521ED8EBC300850536 /* UIApplicationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4511ED8EBC300850536 /* UIApplicationProtocol.swift */; };
+		DC1FD4541ED8EC9A00850536 /* SafariPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4531ED8EC9A00850536 /* SafariPresenterSpec.swift */; };
+		DC1FD4561ED8ECD500850536 /* MockUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4551ED8ECD500850536 /* MockUIApplication.swift */; };
+		DC1FD4581ED8EE4000850536 /* AppDelegateViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4571ED8EE4000850536 /* AppDelegateViewModelSpec.swift */; };
 		DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */; };
 		DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */; };
 		DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */; };
@@ -82,6 +87,11 @@
 		DC09F5991ED8BA300031B510 /* StyleGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
 		DC09F59B1ED8BFCD0031B510 /* OctoTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctoTabBarController.swift; sourceTree = "<group>"; };
 		DC09F59D1ED8C2E60031B510 /* LaunchViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewModelSpec.swift; sourceTree = "<group>"; };
+		DC09F59F1ED8E2680031B510 /* MockSafariPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSafariPresenter.swift; sourceTree = "<group>"; };
+		DC1FD4511ED8EBC300850536 /* UIApplicationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationProtocol.swift; sourceTree = "<group>"; };
+		DC1FD4531ED8EC9A00850536 /* SafariPresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariPresenterSpec.swift; sourceTree = "<group>"; };
+		DC1FD4551ED8ECD500850536 /* MockUIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUIApplication.swift; sourceTree = "<group>"; };
+		DC1FD4571ED8EE4000850536 /* AppDelegateViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateViewModelSpec.swift; sourceTree = "<group>"; };
 		DC23AFC21ED0E23B00D42C46 /* OctoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -144,6 +154,7 @@
 		DC09F49B1ED63D2F0031B510 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				DCB7DF9F1ED12B2E001FE652 /* OctoViewer.swift */,
 				DC09F49C1ED63D400031B510 /* GlobalFunctions.swift */,
 				DC09F5991ED8BA300031B510 /* StyleGuide.swift */,
 			);
@@ -195,7 +206,6 @@
 				DCB7DF8E1ED118D3001FE652 /* Models */,
 				DCB7DF8D1ED118CE001FE652 /* Networking */,
 				DCB7DF8A1ED118BF001FE652 /* Nibs */,
-				DCB7DF9F1ED12B2E001FE652 /* OctoViewer.swift */,
 				DCB7DF891ED118AF001FE652 /* Storyboards */,
 				DCB7DF8C1ED118C8001FE652 /* View Controllers */,
 				DCB7DFA11ED1D108001FE652 /* View Models */,
@@ -212,6 +222,10 @@
 				DCB7DF9C1ED1277C001FE652 /* OctoViewerTests-Bridging-Header.h */,
 				DC09F5661ED762BA0031B510 /* APIKeysSpec.swift */,
 				DC09F59D1ED8C2E60031B510 /* LaunchViewModelSpec.swift */,
+				DC09F59F1ED8E2680031B510 /* MockSafariPresenter.swift */,
+				DC1FD4531ED8EC9A00850536 /* SafariPresenterSpec.swift */,
+				DC1FD4551ED8ECD500850536 /* MockUIApplication.swift */,
+				DC1FD4571ED8EE4000850536 /* AppDelegateViewModelSpec.swift */,
 			);
 			path = OctoViewerTests;
 			sourceTree = "<group>";
@@ -276,6 +290,7 @@
 				DC09F5741ED789130031B510 /* SafariPresenter.swift */,
 				DC09F5761ED790C30031B510 /* Authenticate.swift */,
 				DC09F5871ED87B000031B510 /* Octicons.swift */,
+				DC1FD4511ED8EBC300850536 /* UIApplicationProtocol.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -541,6 +556,7 @@
 				DCB7DF921ED11C22001FE652 /* LaunchViewController.swift in Sources */,
 				DC09F59C1ED8BFCD0031B510 /* OctoTabBarController.swift in Sources */,
 				DC09F56D1ED76CD40031B510 /* Validation.swift in Sources */,
+				DC1FD4521ED8EBC300850536 /* UIApplicationProtocol.swift in Sources */,
 				DC09F5941ED8B0F50031B510 /* UIImage+Icons.swift in Sources */,
 				DC09F57E1ED86C770031B510 /* AppCoordinator.swift in Sources */,
 				DC09F5751ED789130031B510 /* SafariPresenter.swift in Sources */,
@@ -553,9 +569,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC09F5A01ED8E2680031B510 /* MockSafariPresenter.swift in Sources */,
+				DC1FD4541ED8EC9A00850536 /* SafariPresenterSpec.swift in Sources */,
 				DCB7DF9E1ED1277C001FE652 /* LaunchViewControllerSpec.swift in Sources */,
 				DC09F5671ED762BA0031B510 /* APIKeysSpec.swift in Sources */,
+				DC1FD4561ED8ECD500850536 /* MockUIApplication.swift in Sources */,
 				DC09F59E1ED8C2E60031B510 /* LaunchViewModelSpec.swift in Sources */,
+				DC1FD4581ED8EE4000850536 /* AppDelegateViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

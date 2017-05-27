@@ -15,8 +15,9 @@ end
 def testing_pods
   pod 'Nimble'
   pod 'Quick'
-  pod 'RxBlocking'
-  pod 'RxTest'
+  # Not needed yet
+  # pod 'RxBlocking'
+  # pod 'RxTest'
 end
 
 target 'OctoViewer' do

@@ -67,7 +67,6 @@ extension Observable where Element: OptionalType {
   }
 }
 
-// TODO: Added in new RxSwift?
 extension Observable {
   func doOnNext(_ closure: @escaping (Element) -> Void) -> Observable<Element> {
     return self.do(onNext: { (element) in
@@ -155,7 +154,7 @@ extension ObservableType {
 }
 
 extension Observable {
-  func mapToOptional() -> Observable<Optional<Element>> {
+  func mapToOptional() -> Observable<Element?> {
     return map { Optional($0) }
   }
 }

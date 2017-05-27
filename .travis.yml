@@ -1,7 +1,9 @@
 language: swift
 osx_image: xcode8.3
+before_script:
+  - gem install xcpretty
 script:
   - ruby scripts/configs.rb
-  - xcodebuild -scheme OctoViewer -workspace OctoViewer.xcworkspace -sdk iphonesimulator -destination 'name=iPhone 6S,OS=10.1' build test CODE_SIGNING_REQUIRED=NO
+  - xcodebuild -scheme OctoViewer -workspace OctoViewer.xcworkspace -sdk iphonesimulator -destination 'name=iPhone 6S,OS=10.1' build test CODE_SIGNING_REQUIRED=NO | xcpretty
 after_success:
   - bash <(curl -s https://codecov.io/bash)

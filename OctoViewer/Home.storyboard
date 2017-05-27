@@ -17,6 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.14117647058823529" green="0.16078431372549018" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="Vgh-PU-ccO" kind="relationship" relationship="viewControllers" id="lRj-QQ-BJR"/>
@@ -30,7 +32,7 @@
             </objects>
             <point key="canvasLocation" x="-1039" y="-188"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Issues-->
         <scene sceneID="dfe-yF-ytc">
             <objects>
                 <tableViewController id="MX2-dM-hCJ" sceneMemberID="viewController">
@@ -53,7 +55,7 @@
                             <outlet property="delegate" destination="MX2-dM-hCJ" id="6zO-Yd-5G8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="4Ma-Gq-ckI"/>
+                    <navigationItem key="navigationItem" title="Issues" id="4Ma-Gq-ckI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K12-mY-UaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="140" y="-542"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Pull Requests-->
         <scene sceneID="Fzf-zE-6Ss">
             <objects>
                 <tableViewController id="fMC-ok-it9" sceneMemberID="viewController">
@@ -99,13 +101,13 @@
                             <outlet property="delegate" destination="fMC-ok-it9" id="Yyc-ov-E1k"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Ds5-lc-iSc"/>
+                    <navigationItem key="navigationItem" title="Pull Requests" id="Ds5-lc-iSc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xr3-n3-erY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="988" y="137"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Me-->
         <scene sceneID="fnd-Pb-I1a">
             <objects>
                 <tableViewController id="1Qt-EK-f67" sceneMemberID="viewController">
@@ -128,13 +130,13 @@
                             <outlet property="delegate" destination="1Qt-EK-f67" id="9L1-zx-XjA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="F5s-ZP-Uoc"/>
+                    <navigationItem key="navigationItem" title="Me" id="F5s-ZP-Uoc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4F0-kb-ytq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="988" y="799"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Settings-->
         <scene sceneID="3jd-B2-E1E">
             <objects>
                 <tableViewController id="7X8-4U-eLZ" sceneMemberID="viewController">
@@ -157,7 +159,7 @@
                             <outlet property="delegate" destination="7X8-4U-eLZ" id="dHD-KF-CIb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Iec-OQ-ILS"/>
+                    <navigationItem key="navigationItem" title="Settings" id="Iec-OQ-ILS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UGL-EZ-eNy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,7 +233,7 @@
             </objects>
             <point key="canvasLocation" x="140" y="-1218"/>
         </scene>
-        <!--Issues-->
+        <!--Home-->
         <scene sceneID="tfi-ae-Omz">
             <objects>
                 <viewController id="Euf-9N-DpA" sceneMemberID="viewController">
@@ -244,7 +246,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Issues" id="blx-2t-kRi"/>
+                    <navigationItem key="navigationItem" title="Home" id="blx-2t-kRi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rzv-64-DXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

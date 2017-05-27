@@ -20,6 +20,7 @@
 import UIKit
 
 protocol UIApplicationProtocol {
+  var keyWindow: UIWindow? { get }
   func open(_ url: URL, options: [String : Any], completionHandler completion: ((Bool) -> Swift.Void)?)
 }
 

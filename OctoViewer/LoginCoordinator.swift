@@ -21,9 +21,12 @@ import UIKit
 import ReusableViews
 
 final class LoginCoordinator: Coordinator {
+
+  var application: UIApplicationProtocol = UIApplication.shared
+
   func start() {
     let viewController: LaunchViewController = UIStoryboard(name: "Splash", bundle: OctoViewer.bundle)
       .instantiateViewControllerOfType(LaunchViewController.self)
-    UIApplication.shared.keyWindow?.rootViewController?.present(viewController, animated: true, completion: nil)
+    application.keyWindow?.rootViewController?.present(viewController, animated: true, completion: nil)
   }
 }

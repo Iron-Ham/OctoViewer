@@ -18,7 +18,7 @@
 //  limitations under the License.
 
 
-import Foundation
+import UIKit
 @testable import OctoViewer
 
 class MockUIApplication: UIApplicationProtocol {
@@ -26,4 +26,6 @@ class MockUIApplication: UIApplicationProtocol {
   func open(_ url: URL, options: [String : Any], completionHandler completion: ((Bool) -> Void)?) {
     didOpenUrl = true
   }
+
+  var keyWindow: UIWindow? = UIWindow()
 }

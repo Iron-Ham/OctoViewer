@@ -1,5 +1,5 @@
 //
-//  IssuesViewController.swift
+//  MockUIViewController.swift
 //  OctoViewer
 //
 //  Created by Hesham Salman on 5/26/17.
@@ -18,7 +18,13 @@
 //  limitations under the License.
 
 import UIKit
+@testable import OctoViewer
 
-class IssuesViewController: UIViewController {
-  override func viewDidLoad() { }
+class MockUIViewController: UIViewController {
+  var didPresent = false
+  var presentedController: UIViewController?
+  override func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
+    didPresent = true
+    presentedController = viewControllerToPresent
+  }
 }

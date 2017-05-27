@@ -1,5 +1,5 @@
 //
-//  LaunchViewModelSpec.swift
+//  LoginCoordinatorSpec.swift
 //  OctoViewer
 //
 //  Created by Hesham Salman on 5/26/17.
@@ -17,29 +17,40 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-
 import Foundation
 import Quick
 import Nimble
-import RxSwift
-import Moya
 
 @testable import OctoViewer
-class LaunchViewModelSpec: QuickSpec {
+class LoginCoordinatorSpec: QuickSpec {
   override func spec() {
-
-    var viewModel: LaunchViewModelType!
+    var coordinator: LoginCoordinator!
+    var app: MockUIApplication!
+    var vc: MockUIViewController!
 
     beforeEach {
-      viewModel = LaunchViewModel(provider: RxMoyaProvider(stubClosure: MoyaProvider.immediatelyStub))
+      vc = MockUIViewController()
+      app = MockUIApplication()
+
+      coordinator = LoginCoordinator(navigationController: nil)
+      coordinator.application = app
+
+      app.keyWindow?.rootViewController = vc
+      app.keyWindow?.makeKeyAndVisible()
     }
 
-    it("returns self as an input") {
-      expect(viewModel.inputs).to(beIdenticalTo(viewModel))
+    it("presents a view on the application") {
+      coordinator.start()
+
+      expect(vc.presentedController).toNot(beNil())
+      expect(vc.didPresent).to(beTruthy())
     }
 
-    it("returns self as an output") {
-      expect(viewModel.outputs).to(beIdenticalTo(viewModel))
+    it("presents a view on the application, alternate call") {
+      coordinator.presentLoginViewController()
+
+      expect(vc.presentedController).toNot(beNil())
+      expect(vc.didPresent).to(beTruthy())
     }
 
   }

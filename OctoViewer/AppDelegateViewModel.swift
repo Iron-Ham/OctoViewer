@@ -48,7 +48,7 @@ final class AppDelegateViewModel: AppDelegateViewModelType, AppDelegateViewModel
     if let urlComponents = urlComponents,
       let items = urlComponents.queryItems,
       let item = items.filter({ $0.name == "code" }).first, url.host == "auth" {
-      Authenticate.shared.code = item.value
+      AuthenticationHelper.shared.code = item.value
       requestAuthenticationToken(provider: provider)
     }
     return true
@@ -68,6 +68,6 @@ private func requestAuthenticationToken(provider: RxMoyaProvider<GitHubService>)
         let set = CharacterSet(charactersIn: "=&?")
         let keys = response.components(separatedBy: set).enumerated().flatMap { $0.offset % 2 == 0 ? $0.element : nil }
         let values = response.components(separatedBy: set).enumerated().flatMap { $0.offset % 2 != 0 ? $0.element : nil }
-        Authenticate.shared.accessToken = values[keys.index(of: "access_token")!]
+        AuthenticationHelper.shared.accessToken = values[keys.index(of: "access_token")!]
     }
 }

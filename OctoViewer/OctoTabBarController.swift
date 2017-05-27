@@ -25,7 +25,7 @@ class OctoTabBarController: UITabBarController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    if !Authenticate.shared.isLoggedIn {
+    if !AuthenticationHelper.shared.isLoggedIn {
       loginCoordinator.presentLoginViewController()
     }
   }

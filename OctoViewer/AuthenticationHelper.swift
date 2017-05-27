@@ -1,5 +1,5 @@
 //
-//  Authenticate.swift
+//  AuthenticationHelper.swift
 //  OctoViewer
 //
 //  Created by Hesham Salman on 5/25/17.
@@ -19,7 +19,7 @@
 
 import Foundation
 
-struct Authenticate {
+struct AuthenticationHelper {
 
   struct Keys {
     static let code = "code"
@@ -31,10 +31,10 @@ struct Authenticate {
   }
 
   fileprivate struct SharedAuthenticator {
-    static var instance = Authenticate()
+    static var instance = AuthenticationHelper()
   }
 
-  static var shared: Authenticate {
+  static var shared: AuthenticationHelper {
     get {
       return SharedAuthenticator.instance
     }

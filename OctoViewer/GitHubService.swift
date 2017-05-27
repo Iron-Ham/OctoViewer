@@ -62,9 +62,9 @@ extension GitHubService: TargetType {
       return nil
     case .authenticate:
       return [
-        Authenticate.Keys.clientId: Authenticate.shared.clientId,
-        Authenticate.Keys.clientSecret: Authenticate.shared.clientSecret,
-        Authenticate.Keys.code: Authenticate.shared.code!
+        AuthenticationHelper.Keys.clientId: AuthenticationHelper.shared.clientId,
+        AuthenticationHelper.Keys.clientSecret: AuthenticationHelper.shared.clientSecret,
+        AuthenticationHelper.Keys.code: AuthenticationHelper.shared.code!
       ]
     }
   }

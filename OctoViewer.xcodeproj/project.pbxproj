@@ -16,7 +16,7 @@
 		DC09F5671ED762BA0031B510 /* APIKeysSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5661ED762BA0031B510 /* APIKeysSpec.swift */; };
 		DC09F56D1ED76CD40031B510 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F56C1ED76CD40031B510 /* Validation.swift */; };
 		DC09F5751ED789130031B510 /* SafariPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5741ED789130031B510 /* SafariPresenter.swift */; };
-		DC09F5771ED790C30031B510 /* Authenticate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5761ED790C30031B510 /* Authenticate.swift */; };
+		DC09F5771ED790C30031B510 /* AuthenticationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5761ED790C30031B510 /* AuthenticationHelper.swift */; };
 		DC09F5791ED7E3350031B510 /* AppDelegateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5781ED7E3350031B510 /* AppDelegateViewModel.swift */; };
 		DC09F57C1ED86C330031B510 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F57B1ED86C330031B510 /* Coordinator.swift */; };
 		DC09F57E1ED86C770031B510 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F57D1ED86C770031B510 /* AppCoordinator.swift */; };
@@ -70,7 +70,7 @@
 		DC09F5661ED762BA0031B510 /* APIKeysSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeysSpec.swift; sourceTree = "<group>"; };
 		DC09F56C1ED76CD40031B510 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		DC09F5741ED789130031B510 /* SafariPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariPresenter.swift; sourceTree = "<group>"; };
-		DC09F5761ED790C30031B510 /* Authenticate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticate.swift; sourceTree = "<group>"; };
+		DC09F5761ED790C30031B510 /* AuthenticationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationHelper.swift; sourceTree = "<group>"; };
 		DC09F5781ED7E3350031B510 /* AppDelegateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateViewModel.swift; sourceTree = "<group>"; };
 		DC09F57B1ED86C330031B510 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DC09F57D1ED86C770031B510 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -287,7 +287,7 @@
 			children = (
 				DC09F56C1ED76CD40031B510 /* Validation.swift */,
 				DC09F5741ED789130031B510 /* SafariPresenter.swift */,
-				DC09F5761ED790C30031B510 /* Authenticate.swift */,
+				DC09F5761ED790C30031B510 /* AuthenticationHelper.swift */,
 				DC09F5871ED87B000031B510 /* Octicons.swift */,
 				DC1FD4511ED8EBC300850536 /* UIApplicationProtocol.swift */,
 			);
@@ -558,7 +558,7 @@
 				DCB7DFA01ED12B2E001FE652 /* OctoViewer.swift in Sources */,
 				DCB7DFA31ED1D622001FE652 /* LaunchViewModel.swift in Sources */,
 				DC09F5961ED8B1450031B510 /* UIFont+Octicons.swift in Sources */,
-				DC09F5771ED790C30031B510 /* Authenticate.swift in Sources */,
+				DC09F5771ED790C30031B510 /* AuthenticationHelper.swift in Sources */,
 				DC09F5881ED87B000031B510 /* Octicons.swift in Sources */,
 				DCB7DF921ED11C22001FE652 /* LaunchViewController.swift in Sources */,
 				DC09F59C1ED8BFCD0031B510 /* OctoTabBarController.swift in Sources */,

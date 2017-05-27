@@ -42,7 +42,7 @@ class LaunchViewController: UIViewController {
 
   @IBAction
   func loginButtonTapped(_ sender: UIButton) {
-    safariPresenter.safariViewController(for: Authenticate.shared.initialLoginUrl)
+    safariPresenter.safariViewController(for: AuthenticationHelper.shared.initialLoginUrl)
   }
 
 }

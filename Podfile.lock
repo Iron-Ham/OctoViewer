@@ -11,9 +11,13 @@ PODS:
   - ReachabilitySwift (3)
   - Result (3.2.2)
   - ReusableViews (0.1.1)
+  - RxBlocking (3.4.1):
+    - RxSwift (~> 3.4)
   - RxCocoa (3.4.1):
     - RxSwift (~> 3.4)
   - RxSwift (3.4.1)
+  - RxTest (3.4.1):
+    - RxSwift (~> 3.4)
   - SwiftLint (0.18.1)
 
 DEPENDENCIES:
@@ -23,8 +27,10 @@ DEPENDENCIES:
   - Quick
   - ReachabilitySwift
   - ReusableViews
+  - RxBlocking
   - RxCocoa
   - RxSwift
+  - RxTest
   - SwiftLint
 
 SPEC CHECKSUMS:
@@ -35,10 +41,16 @@ SPEC CHECKSUMS:
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   Result: 4edd39003fdccf281d418ee1b006571f70123250
   ReusableViews: dbada69ff24d5310d05e20e4095c93175b205d8c
+  RxBlocking: 1e8c41cfe7ca2fc0e19d0e616c553845c63cbbd3
   RxCocoa: a8a5f1d061d0043e28f56976829f31ce63e8eb09
   RxSwift: 656f8fbeca5bc372121a72d9ebdd3cd3bc0ffade
+  RxTest: a6fd6e4069face7c6488f96f6c42296b3e44db48
   SwiftLint: b467d08f5b25dc3b3cfed243d8e1b74b91714c67
 
+<<<<<<< HEAD
 PODFILE CHECKSUM: d3b3e65467c4a549f6227d1ae5c5f996d9c4a4f6
+=======
+PODFILE CHECKSUM: 40289c7b5bac596551c946e39b6cf6c80fab5b8a
+>>>>>>> 58fc989... Revert "Removed dependencies"
 
 COCOAPODS: 1.2.1

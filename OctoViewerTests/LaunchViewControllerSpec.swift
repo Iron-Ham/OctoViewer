@@ -54,7 +54,7 @@ class LaunchViewControllerSpec: QuickSpec {
 
       it("opens the link") {
         controller.loginButtonTapped(UIButton())
-        expect(mockSafariPresenter.didOpenUrl).to(beTruthy())
+        expect(mockSafariPresenter.didOpenUrlCount).to(equal(1))
       }
     }
 

@@ -25,7 +25,6 @@
 		DC09F5881ED87B000031B510 /* Octicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5871ED87B000031B510 /* Octicons.swift */; };
 		DC09F58A1ED88B120031B510 /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC09F5891ED88B120031B510 /* octicons.ttf */; };
 		DC09F58E1ED89E480031B510 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC09F58D1ED89E480031B510 /* Home.storyboard */; };
-		DC09F5941ED8B0F50031B510 /* UIImage+Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5931ED8B0F50031B510 /* UIImage+Icons.swift */; };
 		DC09F5961ED8B1450031B510 /* UIFont+Octicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5951ED8B1450031B510 /* UIFont+Octicons.swift */; };
 		DC09F5981ED8B2F30031B510 /* IssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5971ED8B2F30031B510 /* IssuesViewController.swift */; };
 		DC09F59A1ED8BA300031B510 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5991ED8BA300031B510 /* StyleGuide.swift */; };
@@ -41,8 +40,8 @@
 		DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */; };
 		DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */; };
 		DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */; };
-		DC38A1011ED399EA00FDFAAF /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		DC38A1021ED399EA00FDFAAF /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		DC38A1011ED399EA00FDFAAF /* (null) in Resources */ = {isa = PBXBuildFile; };
+		DC38A1021ED399EA00FDFAAF /* (null) in Resources */ = {isa = PBXBuildFile; };
 		DCB7DF901ED11953001FE652 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB7DF8F1ED11953001FE652 /* Splash.storyboard */; };
 		DCB7DF921ED11C22001FE652 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7DF911ED11C22001FE652 /* LaunchViewController.swift */; };
 		DCB7DF941ED11CEA001FE652 /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7DF931ED11CEA001FE652 /* GitHubService.swift */; };
@@ -80,7 +79,6 @@
 		DC09F5871ED87B000031B510 /* Octicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Octicons.swift; sourceTree = "<group>"; };
 		DC09F5891ED88B120031B510 /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = octicons.ttf; sourceTree = "<group>"; };
 		DC09F58D1ED89E480031B510 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		DC09F5931ED8B0F50031B510 /* UIImage+Icons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Icons.swift"; sourceTree = "<group>"; };
 		DC09F5951ED8B1450031B510 /* UIFont+Octicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Octicons.swift"; sourceTree = "<group>"; };
 		DC09F5971ED8B2F30031B510 /* IssuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesViewController.swift; sourceTree = "<group>"; };
 		DC09F5991ED8BA300031B510 /* StyleGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
@@ -300,7 +298,6 @@
 			isa = PBXGroup;
 			children = (
 				DC09F5641ED75E080031B510 /* Observable+Operators.swift */,
-				DC09F5931ED8B0F50031B510 /* UIImage+Icons.swift */,
 				DC09F5951ED8B1450031B510 /* UIFont+Octicons.swift */,
 			);
 			name = Extensions;
@@ -418,8 +415,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC09F58E1ED89E480031B510 /* Home.storyboard in Resources */,
-				DC38A1021ED399EA00FDFAAF /* BuildFile in Resources */,
-				DC38A1011ED399EA00FDFAAF /* BuildFile in Resources */,
+				DC38A1021ED399EA00FDFAAF /* (null) in Resources */,
+				DC38A1011ED399EA00FDFAAF /* (null) in Resources */,
 				DC09F58A1ED88B120031B510 /* octicons.ttf in Resources */,
 				DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */,
 				DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */,
@@ -567,7 +564,6 @@
 				DC09F59C1ED8BFCD0031B510 /* OctoTabBarController.swift in Sources */,
 				DC09F56D1ED76CD40031B510 /* Validation.swift in Sources */,
 				DC1FD4521ED8EBC300850536 /* UIApplicationProtocol.swift in Sources */,
-				DC09F5941ED8B0F50031B510 /* UIImage+Icons.swift in Sources */,
 				DC09F57E1ED86C770031B510 /* AppCoordinator.swift in Sources */,
 				DC09F5751ED789130031B510 /* SafariPresenter.swift in Sources */,
 				DC09F5801ED86D090031B510 /* LoginCoordinator.swift in Sources */,

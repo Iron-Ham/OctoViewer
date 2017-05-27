@@ -22,9 +22,9 @@ import Foundation
 
 class MockSafariPresenter: SafariPresenter {
 
-  var didOpenUrl = false
+  var didOpenUrlCount = 0
 
   override func safariViewController(for url: URL) {
-    didOpenUrl = true
+    didOpenUrlCount += 1
   }
 }

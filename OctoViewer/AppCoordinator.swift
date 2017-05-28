@@ -20,8 +20,16 @@
 import UIKit
 
 final class AppCoordinator: Coordinator {
+
+  var childCoordinators: [Coordinator] = []
+  var navigationController: UINavigationController?
+
   func start() {
     let coordinator = HomeCoordinator(navigationController: navigationController)
     coordinator.start()
+  }
+
+  init(navigationController: UINavigationController? = nil) {
+    self.navigationController = navigationController
   }
 }

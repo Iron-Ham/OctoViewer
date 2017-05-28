@@ -21,12 +21,17 @@ import UIKit
 import ReusableViews
 
 final class LoginCoordinator: Coordinator {
-
+  var childCoordinators: [Coordinator] = []
   var application: UIApplicationProtocol = UIApplication.shared
-
+  var navigationController: UINavigationController?
+  
   func start() {
     let viewController: LaunchViewController = UIStoryboard(name: "Splash", bundle: OctoViewer.bundle)
       .instantiateViewControllerOfType(LaunchViewController.self)
     application.keyWindow?.rootViewController?.present(viewController, animated: true, completion: nil)
+  }
+
+  init(navigationController: UINavigationController? = nil) {
+    self.navigationController = navigationController
   }
 }

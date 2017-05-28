@@ -53,5 +53,20 @@ class LoginCoordinatorSpec: QuickSpec {
       expect(vc.didPresent).to(beTruthy())
     }
 
+    describe("Generic coordinator functionality") {
+      it("can add and remove a child") {
+        let secondaryCoordinator = AppCoordinator()
+        coordinator.addChild(coordinator: secondaryCoordinator)
+        expect(coordinator.childCoordinators.contains(where: { $0 === secondaryCoordinator })).to(beTruthy())
+        coordinator.removeChild(coordinator: secondaryCoordinator)
+        expect(coordinator.childCoordinators.contains(where: { $0 === secondaryCoordinator })).to(beFalsy())
+      }
+
+      it("doesn't blow up trying to remove something that doesn't exit") {
+        let secondaryCoordinator = AppCoordinator()
+        coordinator.removeChild(coordinator: secondaryCoordinator)
+      }
+    }
+
   }
 }

@@ -45,21 +45,16 @@ class LaunchViewControllerSpec: QuickSpec {
       }
     }
 
-    describe("navigation bar visibility") {
+    describe("actions") {
+      var mockSafariPresenter: MockSafariPresenter!
       beforeEach {
-        _ = UINavigationController(rootViewController: controller)
-      }
-      
-      context("when the view is visible") {
-        beforeEach {
-          controller.viewWillAppear(false)
-        }
+        mockSafariPresenter = MockSafariPresenter()
+        controller.safariPresenter = mockSafariPresenter
       }
 
-      context("when the view is not visible") {
-        beforeEach {
-          controller.viewWillDisappear(false)
-        }
+      it("opens the link") {
+        controller.loginButtonTapped(UIButton())
+        expect(mockSafariPresenter.didOpenUrlCount).to(equal(1))
       }
     }
 

@@ -7,12 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2140290DF609C73C74A59F3 /* Pods_OctoViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4695A5E34757E28663B64B /* Pods_OctoViewer.framework */; };
+		9D8C695CD75EF6EA88097BF0 /* Pods_OctoViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B6E912426C77245920B581 /* Pods_OctoViewer.framework */; };
+		A2BC644A097D32E1F7E1782A /* Pods_OctoViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98B6FD9139701664D414C99 /* Pods_OctoViewerTests.framework */; };
 		DC09F4981ED634B90031B510 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F4971ED634B90031B510 /* Networking.swift */; };
 		DC09F49A1ED6367E0031B510 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F4991ED6367E0031B510 /* APIKeys.swift */; };
 		DC09F49D1ED63D400031B510 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F49C1ED63D400031B510 /* GlobalFunctions.swift */; };
 		DC09F5651ED75E080031B510 /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5641ED75E080031B510 /* Observable+Operators.swift */; };
 		DC09F5671ED762BA0031B510 /* APIKeysSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5661ED762BA0031B510 /* APIKeysSpec.swift */; };
+		DC09F56D1ED76CD40031B510 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F56C1ED76CD40031B510 /* Validation.swift */; };
+		DC09F5751ED789130031B510 /* SafariPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5741ED789130031B510 /* SafariPresenter.swift */; };
+		DC09F5771ED790C30031B510 /* AuthenticationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5761ED790C30031B510 /* AuthenticationHelper.swift */; };
+		DC09F5791ED7E3350031B510 /* AppDelegateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5781ED7E3350031B510 /* AppDelegateViewModel.swift */; };
+		DC09F57C1ED86C330031B510 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F57B1ED86C330031B510 /* Coordinator.swift */; };
+		DC09F57E1ED86C770031B510 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F57D1ED86C770031B510 /* AppCoordinator.swift */; };
+		DC09F5801ED86D090031B510 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F57F1ED86D090031B510 /* LoginCoordinator.swift */; };
+		DC09F5821ED86D220031B510 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5811ED86D220031B510 /* HomeCoordinator.swift */; };
+		DC09F5881ED87B000031B510 /* Octicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5871ED87B000031B510 /* Octicons.swift */; };
+		DC09F58A1ED88B120031B510 /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC09F5891ED88B120031B510 /* octicons.ttf */; };
+		DC09F58E1ED89E480031B510 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC09F58D1ED89E480031B510 /* Home.storyboard */; };
+		DC09F5961ED8B1450031B510 /* UIFont+Octicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5951ED8B1450031B510 /* UIFont+Octicons.swift */; };
+		DC09F5981ED8B2F30031B510 /* IssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5971ED8B2F30031B510 /* IssuesViewController.swift */; };
+		DC09F59A1ED8BA300031B510 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5991ED8BA300031B510 /* StyleGuide.swift */; };
+		DC09F59C1ED8BFCD0031B510 /* OctoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F59B1ED8BFCD0031B510 /* OctoTabBarController.swift */; };
+		DC09F59E1ED8C2E60031B510 /* LaunchViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F59D1ED8C2E60031B510 /* LaunchViewModelSpec.swift */; };
+		DC09F5A01ED8E2680031B510 /* MockSafariPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F59F1ED8E2680031B510 /* MockSafariPresenter.swift */; };
+		DC1FD4521ED8EBC300850536 /* UIApplicationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4511ED8EBC300850536 /* UIApplicationProtocol.swift */; };
+		DC1FD4541ED8EC9A00850536 /* SafariPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4531ED8EC9A00850536 /* SafariPresenterSpec.swift */; };
+		DC1FD4561ED8ECD500850536 /* MockUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4551ED8ECD500850536 /* MockUIApplication.swift */; };
+		DC1FD4581ED8EE4000850536 /* AppDelegateViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4571ED8EE4000850536 /* AppDelegateViewModelSpec.swift */; };
+		DC1FD45A1ED9112100850536 /* LoginCoordinatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4591ED9112100850536 /* LoginCoordinatorSpec.swift */; };
+		DC1FD45C1ED912D600850536 /* MockUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD45B1ED912D600850536 /* MockUIViewController.swift */; };
 		DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */; };
 		DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */; };
 		DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */; };
@@ -24,7 +48,6 @@
 		DCB7DF9E1ED1277C001FE652 /* LaunchViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7DF9D1ED1277C001FE652 /* LaunchViewControllerSpec.swift */; };
 		DCB7DFA01ED12B2E001FE652 /* OctoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7DF9F1ED12B2E001FE652 /* OctoViewer.swift */; };
 		DCB7DFA31ED1D622001FE652 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7DFA21ED1D622001FE652 /* LaunchViewModel.swift */; };
-		FCF84DCDDF9D64064DB17524 /* Pods_OctoViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8565F1FA2A220210219C6BEC /* Pods_OctoViewerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,16 +61,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		652CDB4D2C722D299CAE96C6 /* Pods-OctoViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoViewerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoViewerTests/Pods-OctoViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8565F1FA2A220210219C6BEC /* Pods_OctoViewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoViewerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		95BFC58630C0C7C0C9FB1A0C /* Pods-OctoViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoViewer/Pods-OctoViewer.debug.xcconfig"; sourceTree = "<group>"; };
-		9ED538A064DB6D4CC1F3E4E1 /* Pods-OctoViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoViewerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoViewerTests/Pods-OctoViewerTests.release.xcconfig"; sourceTree = "<group>"; };
-		DB4695A5E34757E28663B64B /* Pods_OctoViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E8EF109E7A7509C7EA7A52 /* Pods-OctoViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoViewerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoViewerTests/Pods-OctoViewerTests.release.xcconfig"; sourceTree = "<group>"; };
+		B98B6FD9139701664D414C99 /* Pods_OctoViewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoViewerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC09F4971ED634B90031B510 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		DC09F4991ED6367E0031B510 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		DC09F49C1ED63D400031B510 /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		DC09F5641ED75E080031B510 /* Observable+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
 		DC09F5661ED762BA0031B510 /* APIKeysSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeysSpec.swift; sourceTree = "<group>"; };
+		DC09F56C1ED76CD40031B510 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		DC09F5741ED789130031B510 /* SafariPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariPresenter.swift; sourceTree = "<group>"; };
+		DC09F5761ED790C30031B510 /* AuthenticationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationHelper.swift; sourceTree = "<group>"; };
+		DC09F5781ED7E3350031B510 /* AppDelegateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateViewModel.swift; sourceTree = "<group>"; };
+		DC09F57B1ED86C330031B510 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DC09F57D1ED86C770031B510 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DC09F57F1ED86D090031B510 /* LoginCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		DC09F5811ED86D220031B510 /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		DC09F5871ED87B000031B510 /* Octicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Octicons.swift; sourceTree = "<group>"; };
+		DC09F5891ED88B120031B510 /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = octicons.ttf; sourceTree = "<group>"; };
+		DC09F58D1ED89E480031B510 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		DC09F5951ED8B1450031B510 /* UIFont+Octicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Octicons.swift"; sourceTree = "<group>"; };
+		DC09F5971ED8B2F30031B510 /* IssuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesViewController.swift; sourceTree = "<group>"; };
+		DC09F5991ED8BA300031B510 /* StyleGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		DC09F59B1ED8BFCD0031B510 /* OctoTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctoTabBarController.swift; sourceTree = "<group>"; };
+		DC09F59D1ED8C2E60031B510 /* LaunchViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewModelSpec.swift; sourceTree = "<group>"; };
+		DC09F59F1ED8E2680031B510 /* MockSafariPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSafariPresenter.swift; sourceTree = "<group>"; };
+		DC1FD4511ED8EBC300850536 /* UIApplicationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationProtocol.swift; sourceTree = "<group>"; };
+		DC1FD4531ED8EC9A00850536 /* SafariPresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariPresenterSpec.swift; sourceTree = "<group>"; };
+		DC1FD4551ED8ECD500850536 /* MockUIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUIApplication.swift; sourceTree = "<group>"; };
+		DC1FD4571ED8EE4000850536 /* AppDelegateViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateViewModelSpec.swift; sourceTree = "<group>"; };
+		DC1FD4591ED9112100850536 /* LoginCoordinatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCoordinatorSpec.swift; sourceTree = "<group>"; };
+		DC1FD45B1ED912D600850536 /* MockUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUIViewController.swift; sourceTree = "<group>"; };
 		DC23AFC21ED0E23B00D42C46 /* OctoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,7 +107,8 @@
 		DCB7DF9D1ED1277C001FE652 /* LaunchViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewControllerSpec.swift; sourceTree = "<group>"; };
 		DCB7DF9F1ED12B2E001FE652 /* OctoViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctoViewer.swift; sourceTree = "<group>"; };
 		DCB7DFA21ED1D622001FE652 /* LaunchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
-		F74888A1C215AB4E24C2D862 /* Pods-OctoViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoViewer/Pods-OctoViewer.release.xcconfig"; sourceTree = "<group>"; };
+		E1B6E912426C77245920B581 /* Pods_OctoViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0F0CA5834F6B7ADF33AB9A0 /* Pods-OctoViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoViewerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoViewerTests/Pods-OctoViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2140290DF609C73C74A59F3 /* Pods_OctoViewer.framework in Frameworks */,
+				9D8C695CD75EF6EA88097BF0 /* Pods_OctoViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,29 +124,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCF84DCDDF9D64064DB17524 /* Pods_OctoViewerTests.framework in Frameworks */,
+				A2BC644A097D32E1F7E1782A /* Pods_OctoViewerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		310F0C0EA45BE038484FA4DB /* Pods */ = {
+		313473B903087474D51F8D60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				95BFC58630C0C7C0C9FB1A0C /* Pods-OctoViewer.debug.xcconfig */,
-				F74888A1C215AB4E24C2D862 /* Pods-OctoViewer.release.xcconfig */,
-				652CDB4D2C722D299CAE96C6 /* Pods-OctoViewerTests.debug.xcconfig */,
-				9ED538A064DB6D4CC1F3E4E1 /* Pods-OctoViewerTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		3E599D84AC619603F58592C3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DB4695A5E34757E28663B64B /* Pods_OctoViewer.framework */,
-				8565F1FA2A220210219C6BEC /* Pods_OctoViewerTests.framework */,
+				E1B6E912426C77245920B581 /* Pods_OctoViewer.framework */,
+				B98B6FD9139701664D414C99 /* Pods_OctoViewerTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,9 +143,32 @@
 		DC09F49B1ED63D2F0031B510 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				DCB7DF9F1ED12B2E001FE652 /* OctoViewer.swift */,
 				DC09F49C1ED63D400031B510 /* GlobalFunctions.swift */,
+				DC09F5991ED8BA300031B510 /* StyleGuide.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		DC09F57A1ED86C1C0031B510 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				DC09F57B1ED86C330031B510 /* Coordinator.swift */,
+				DC09F57D1ED86C770031B510 /* AppCoordinator.swift */,
+				DC09F57F1ED86D090031B510 /* LoginCoordinator.swift */,
+				DC09F5811ED86D220031B510 /* HomeCoordinator.swift */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
+		DC1FD45D1ED9140500850536 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				DC09F59F1ED8E2680031B510 /* MockSafariPresenter.swift */,
+				DC1FD4551ED8ECD500850536 /* MockUIApplication.swift */,
+				DC1FD45B1ED912D600850536 /* MockUIViewController.swift */,
+			);
+			name = Mocks;
 			sourceTree = "<group>";
 		};
 		DC23AFB91ED0E23B00D42C46 = {
@@ -122,8 +178,8 @@
 				DC23AFC41ED0E23B00D42C46 /* OctoViewer */,
 				DC23AFD91ED0E23B00D42C46 /* OctoViewerTests */,
 				DC23AFC31ED0E23B00D42C46 /* Products */,
-				310F0C0EA45BE038484FA4DB /* Pods */,
-				3E599D84AC619603F58592C3 /* Frameworks */,
+				E58FD79BE0856485664FC695 /* Pods */,
+				313473B903087474D51F8D60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,15 +195,16 @@
 		DC23AFC41ED0E23B00D42C46 /* OctoViewer */ = {
 			isa = PBXGroup;
 			children = (
-				DC09F49B1ED63D2F0031B510 /* Helpers */,
+				DC09F5891ED88B120031B510 /* octicons.ttf */,
 				DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */,
 				DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */,
+				DC09F57A1ED86C1C0031B510 /* Coordinators */,
 				DCB7DF991ED1244D001FE652 /* Extensions */,
+				DC09F49B1ED63D2F0031B510 /* Helpers */,
 				DC23AFD11ED0E23B00D42C46 /* Info.plist */,
 				DCB7DF8E1ED118D3001FE652 /* Models */,
 				DCB7DF8D1ED118CE001FE652 /* Networking */,
 				DCB7DF8A1ED118BF001FE652 /* Nibs */,
-				DCB7DF9F1ED12B2E001FE652 /* OctoViewer.swift */,
 				DCB7DF891ED118AF001FE652 /* Storyboards */,
 				DCB7DF8C1ED118C8001FE652 /* View Controllers */,
 				DCB7DFA11ED1D108001FE652 /* View Models */,
@@ -159,10 +216,15 @@
 		DC23AFD91ED0E23B00D42C46 /* OctoViewerTests */ = {
 			isa = PBXGroup;
 			children = (
+				DC1FD45D1ED9140500850536 /* Mocks */,
 				DC23AFDC1ED0E23B00D42C46 /* Info.plist */,
 				DCB7DF9D1ED1277C001FE652 /* LaunchViewControllerSpec.swift */,
 				DCB7DF9C1ED1277C001FE652 /* OctoViewerTests-Bridging-Header.h */,
 				DC09F5661ED762BA0031B510 /* APIKeysSpec.swift */,
+				DC09F59D1ED8C2E60031B510 /* LaunchViewModelSpec.swift */,
+				DC1FD4531ED8EC9A00850536 /* SafariPresenterSpec.swift */,
+				DC1FD4571ED8EE4000850536 /* AppDelegateViewModelSpec.swift */,
+				DC1FD4591ED9112100850536 /* LoginCoordinatorSpec.swift */,
 			);
 			path = OctoViewerTests;
 			sourceTree = "<group>";
@@ -181,6 +243,7 @@
 			children = (
 				DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */,
 				DCB7DF8F1ED11953001FE652 /* Splash.storyboard */,
+				DC09F58D1ED89E480031B510 /* Home.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -203,6 +266,8 @@
 			isa = PBXGroup;
 			children = (
 				DCB7DF911ED11C22001FE652 /* LaunchViewController.swift */,
+				DC09F5971ED8B2F30031B510 /* IssuesViewController.swift */,
+				DC09F59B1ED8BFCD0031B510 /* OctoTabBarController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -220,6 +285,11 @@
 		DCB7DF8E1ED118D3001FE652 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DC09F56C1ED76CD40031B510 /* Validation.swift */,
+				DC09F5741ED789130031B510 /* SafariPresenter.swift */,
+				DC09F5761ED790C30031B510 /* AuthenticationHelper.swift */,
+				DC09F5871ED87B000031B510 /* Octicons.swift */,
+				DC1FD4511ED8EBC300850536 /* UIApplicationProtocol.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -228,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				DC09F5641ED75E080031B510 /* Observable+Operators.swift */,
+				DC09F5951ED8B1450031B510 /* UIFont+Octicons.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -236,8 +307,18 @@
 			isa = PBXGroup;
 			children = (
 				DCB7DFA21ED1D622001FE652 /* LaunchViewModel.swift */,
+				DC09F5781ED7E3350031B510 /* AppDelegateViewModel.swift */,
 			);
 			name = "View Models";
+			sourceTree = "<group>";
+		};
+		E58FD79BE0856485664FC695 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0F0CA5834F6B7ADF33AB9A0 /* Pods-OctoViewerTests.debug.xcconfig */,
+				90E8EF109E7A7509C7EA7A52 /* Pods-OctoViewerTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,13 +328,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC23AFDF1ED0E23B00D42C46 /* Build configuration list for PBXNativeTarget "OctoViewer" */;
 			buildPhases = (
-				7B9C91ABA1C8009C6E3CAE44 /* [CP] Check Pods Manifest.lock */,
+				667C101C1D4CBDA09E69DEB3 /* [CP] Check Pods Manifest.lock */,
 				DC23AFBE1ED0E23B00D42C46 /* Sources */,
 				DC23AFBF1ED0E23B00D42C46 /* Frameworks */,
 				DC23AFC01ED0E23B00D42C46 /* Resources */,
 				DC23AFE51ED0E53B00D42C46 /* SwiftLint */,
-				0C4528F14B34B5897A03A675 /* [CP] Embed Pods Frameworks */,
-				C6DA7F27CB88F8B664838871 /* [CP] Copy Pods Resources */,
+				0FB03848EE4A91F3548454CD /* [CP] Embed Pods Frameworks */,
+				39BABA3E08215A8A47F03E5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,12 +349,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC23AFE21ED0E23B00D42C46 /* Build configuration list for PBXNativeTarget "OctoViewerTests" */;
 			buildPhases = (
-				E3CA8040F3AAA657EC8B0ACE /* [CP] Check Pods Manifest.lock */,
+				B4006D9EB15B4553488D31FF /* [CP] Check Pods Manifest.lock */,
 				DC23AFD21ED0E23B00D42C46 /* Sources */,
 				DC23AFD31ED0E23B00D42C46 /* Frameworks */,
 				DC23AFD41ED0E23B00D42C46 /* Resources */,
-				030C1C8927A001884880241F /* [CP] Embed Pods Frameworks */,
-				9B271D4FB2682A750BD7258A /* [CP] Copy Pods Resources */,
+				1C8E1977946A2DCB6741D512 /* [CP] Embed Pods Frameworks */,
+				E3AD3719EAC7B4F0A6ED95CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -333,8 +414,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC09F58E1ED89E480031B510 /* Home.storyboard in Resources */,
 				DC38A1021ED399EA00FDFAAF /* (null) in Resources */,
 				DC38A1011ED399EA00FDFAAF /* (null) in Resources */,
+				DC09F58A1ED88B120031B510 /* octicons.ttf in Resources */,
 				DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */,
 				DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */,
 				DCB7DF901ED11953001FE652 /* Splash.storyboard in Resources */,
@@ -351,22 +434,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		030C1C8927A001884880241F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoViewerTests/Pods-OctoViewerTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0C4528F14B34B5897A03A675 /* [CP] Embed Pods Frameworks */ = {
+		0FB03848EE4A91F3548454CD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -381,7 +449,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoViewer/Pods-OctoViewer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7B9C91ABA1C8009C6E3CAE44 /* [CP] Check Pods Manifest.lock */ = {
+		1C8E1977946A2DCB6741D512 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoViewerTests/Pods-OctoViewerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39BABA3E08215A8A47F03E5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoViewer/Pods-OctoViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		667C101C1D4CBDA09E69DEB3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -396,34 +494,19 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9B271D4FB2682A750BD7258A /* [CP] Copy Pods Resources */ = {
+		B4006D9EB15B4553488D31FF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoViewerTests/Pods-OctoViewerTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C6DA7F27CB88F8B664838871 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoViewer/Pods-OctoViewer-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		DC23AFE51ED0E53B00D42C46 /* SwiftLint */ = {
@@ -440,19 +523,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
-		E3CA8040F3AAA657EC8B0ACE /* [CP] Check Pods Manifest.lock */ = {
+		E3AD3719EAC7B4F0A6ED95CC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoViewerTests/Pods-OctoViewerTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -462,14 +545,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC09F5791ED7E3350031B510 /* AppDelegateViewModel.swift in Sources */,
 				DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */,
 				DCB7DF941ED11CEA001FE652 /* GitHubService.swift in Sources */,
+				DC09F5821ED86D220031B510 /* HomeCoordinator.swift in Sources */,
 				DC09F49D1ED63D400031B510 /* GlobalFunctions.swift in Sources */,
 				DC09F49A1ED6367E0031B510 /* APIKeys.swift in Sources */,
+				DC09F59A1ED8BA300031B510 /* StyleGuide.swift in Sources */,
+				DC09F5981ED8B2F30031B510 /* IssuesViewController.swift in Sources */,
 				DC09F4981ED634B90031B510 /* Networking.swift in Sources */,
+				DC09F57C1ED86C330031B510 /* Coordinator.swift in Sources */,
 				DCB7DFA01ED12B2E001FE652 /* OctoViewer.swift in Sources */,
 				DCB7DFA31ED1D622001FE652 /* LaunchViewModel.swift in Sources */,
+				DC09F5961ED8B1450031B510 /* UIFont+Octicons.swift in Sources */,
+				DC09F5771ED790C30031B510 /* AuthenticationHelper.swift in Sources */,
+				DC09F5881ED87B000031B510 /* Octicons.swift in Sources */,
 				DCB7DF921ED11C22001FE652 /* LaunchViewController.swift in Sources */,
+				DC09F59C1ED8BFCD0031B510 /* OctoTabBarController.swift in Sources */,
+				DC09F56D1ED76CD40031B510 /* Validation.swift in Sources */,
+				DC1FD4521ED8EBC300850536 /* UIApplicationProtocol.swift in Sources */,
+				DC09F57E1ED86C770031B510 /* AppCoordinator.swift in Sources */,
+				DC09F5751ED789130031B510 /* SafariPresenter.swift in Sources */,
+				DC09F5801ED86D090031B510 /* LoginCoordinator.swift in Sources */,
 				DC09F5651ED75E080031B510 /* Observable+Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,8 +575,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC09F5A01ED8E2680031B510 /* MockSafariPresenter.swift in Sources */,
+				DC1FD4541ED8EC9A00850536 /* SafariPresenterSpec.swift in Sources */,
 				DCB7DF9E1ED1277C001FE652 /* LaunchViewControllerSpec.swift in Sources */,
 				DC09F5671ED762BA0031B510 /* APIKeysSpec.swift in Sources */,
+				DC1FD45C1ED912D600850536 /* MockUIViewController.swift in Sources */,
+				DC1FD4561ED8ECD500850536 /* MockUIApplication.swift in Sources */,
+				DC1FD45A1ED9112100850536 /* LoginCoordinatorSpec.swift in Sources */,
+				DC09F59E1ED8C2E60031B510 /* LaunchViewModelSpec.swift in Sources */,
+				DC1FD4581ED8EE4000850536 /* AppDelegateViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +728,7 @@
 		};
 		DC23AFE31ED0E23B00D42C46 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 652CDB4D2C722D299CAE96C6 /* Pods-OctoViewerTests.debug.xcconfig */;
+			baseConfigurationReference = F0F0CA5834F6B7ADF33AB9A0 /* Pods-OctoViewerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -643,7 +747,7 @@
 		};
 		DC23AFE41ED0E23B00D42C46 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9ED538A064DB6D4CC1F3E4E1 /* Pods-OctoViewerTests.release.xcconfig */;
+			baseConfigurationReference = 90E8EF109E7A7509C7EA7A52 /* Pods-OctoViewerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

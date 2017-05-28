@@ -20,16 +20,16 @@
 
 import UIKit
 import RxSwift
-import Result
 import Moya
 
 class LaunchViewController: UIViewController {
-
-  var viewModel: LaunchViewModelType = LaunchViewModel()
   @IBOutlet private weak var titleLabel: UILabel!
   @IBOutlet weak var zenLabel: UILabel!
   @IBOutlet private weak var loginButton: UIButton!
-  @IBOutlet private weak var signupButton: UIButton!
+
+  var viewModel: LaunchViewModelType = LaunchViewModel()
+  var safariPresenter = SafariPresenter()
+  var disposeBag = DisposeBag()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -37,12 +37,12 @@ class LaunchViewController: UIViewController {
       if case let .next(response) = event {
         self?.zenLabel.text = response
       }
-    }
+    }.addDisposableTo(disposeBag)
   }
 
   @IBAction
   func loginButtonTapped(_ sender: UIButton) {
-    viewModel.inputs.loginButtonTapped()
+    safariPresenter.safariViewController(for: AuthenticationHelper.shared.initialLoginUrl)
   }
 
 }

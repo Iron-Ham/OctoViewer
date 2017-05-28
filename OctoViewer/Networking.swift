@@ -56,11 +56,11 @@ class OnlineProvider<Target>: RxMoyaProvider<Target> where Target: TargetType {
 }
 
 protocol NetworkingType {
-  associatedtype T: TargetType
-  var provider: OnlineProvider<T> { get }
+  associatedtype Target: TargetType
+  var provider: OnlineProvider<Target> { get }
 }
 
 struct Networking: NetworkingType {
-  typealias T = GitHubService
+  typealias Target = GitHubService
   let provider: OnlineProvider<GitHubService>
 }

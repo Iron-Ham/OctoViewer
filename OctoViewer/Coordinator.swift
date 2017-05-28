@@ -32,10 +32,7 @@ extension Coordinator {
   }
 
   func removeChild(coordinator: Coordinator) {
-    guard let index = childCoordinators.index(where: { $0 === coordinator }) else {
-      return
-    }
-    childCoordinators.remove(at: index)
+    childCoordinators = childCoordinators.filter { $0 !== coordinator }
   }
 }
 

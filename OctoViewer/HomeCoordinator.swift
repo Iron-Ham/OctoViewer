@@ -20,8 +20,15 @@
 import UIKit
 
 final class HomeCoordinator: Coordinator {
+  var childCoordinators: [Coordinator] = []
+  var navigationController: UINavigationController?
+
   func start() {
     let vc = UIStoryboard(name: "Home", bundle: OctoViewer.bundle).instantiateInitialViewController()!
     navigationController?.present(vc, animated: false, completion: nil)
+  }
+
+  init(navigationController: UINavigationController? = nil) {
+    self.navigationController = navigationController
   }
 }

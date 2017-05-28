@@ -19,18 +19,29 @@
 
 import UIKit
 
-class Coordinator {
-  var childCoordinators: [Coordinator] = []
-  weak var navigationController: UINavigationController?
+protocol Coordinator: class {
+  var childCoordinators: [Coordinator] { get set }
+  var navigationController: UINavigationController? { get set }
 
-  init(navigationController: UINavigationController?) {
-    self.navigationController = navigationController
+  func start()
+}
+
+extension Coordinator {
+  func addChild(coordinator: Coordinator) {
+    childCoordinators.append(coordinator)
+  }
+
+  func removeChild(coordinator: Coordinator) {
+    guard let index = childCoordinators.index(where: { $0 === coordinator }) else {
+      return
+    }
+    childCoordinators.remove(at: index)
   }
 }
 
 extension Coordinator {
   func presentLoginViewController() {
-    let coordinator = LoginCoordinator(navigationController: nil)
+    let coordinator = LoginCoordinator()
     coordinator.start()
   }
 }

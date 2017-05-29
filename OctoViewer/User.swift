@@ -17,13 +17,12 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-
 import Foundation
 import Gloss
 
 typealias RepositoryOwner = User
 
-struct User {
+struct User: Glossy {
   let login: String
   let id: Int
   let avatarUrl: URL
@@ -53,10 +52,7 @@ struct User {
   let following: Int?
   let createdAt: Date?
   let updatedAt: Date?
-}
 
-//swiftlint:disable function_body_length
-extension User: Glossy {
   init?(json: JSON) {
     guard let login: String = Keys.login <~~ json,
       let id: Int = Keys.id <~~ json,

@@ -45,7 +45,7 @@ struct User {
   var location: String?
   var email: String?
   var hireable: Bool?
-  var bio: String
+  var bio: String?
   let publicRepos: Int?
   let publicGists: Int?
   let followers: Int?
@@ -70,8 +70,7 @@ extension User: Glossy {
       let eventsUrl: URL = Keys.eventsUrl <~~ json,
       let receivedEventsUrl: URL = Keys.receivedEventsUrl <~~ json,
       let type: String = Keys.type <~~ json,
-      let siteAdmin: Bool = Keys.siteAdmin <~~ json,
-      let bio: String = Keys.bio <~~ json else {
+      let siteAdmin: Bool = Keys.siteAdmin <~~ json else {
         return nil
     }
     self.login = login
@@ -88,7 +87,7 @@ extension User: Glossy {
     self.receivedEventsUrl = receivedEventsUrl
     self.type = type
     self.siteAdmin = siteAdmin
-    self.bio = bio
+    self.bio = Keys.bio <~~ json
     self.subscriptionsUrl = Keys.subscriptionsUrl <~~ json
     self.organizationsUrl = Keys.organizationsUrl <~~ json
     self.name = Keys.name <~~ json
@@ -101,8 +100,8 @@ extension User: Glossy {
     self.publicGists = Keys.publicGists <~~ json
     self.followers = Keys.followers <~~ json
     self.following = Keys.following <~~ json
-    self.createdAt = Keys.createdAt <~~ json
-    self.updatedAt = Keys.updatedAt <~~ json
+    self.createdAt = Decoder.decode(dateISO8601ForKey: Keys.createdAt)(json)
+    self.updatedAt = Decoder.decode(dateISO8601ForKey: Keys.updatedAt)(json)
   }
 
   func toJSON() -> JSON? {

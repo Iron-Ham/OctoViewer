@@ -20,8 +20,8 @@
 import Foundation
 import Gloss
 
-struct Notification {
-  let id: Int
+struct GitNotification {
+  let id: String
   let repository: Repository
   let subject: NotificationSubject
   let reason: NotificationReason
@@ -31,14 +31,14 @@ struct Notification {
   let url: URL
 }
 
-extension Notification: Decodable {
+extension GitNotification: Decodable {
   init?(json: JSON) {
-    guard let id: Int = Keys.id <~~ json,
+    guard let id: String = Keys.id <~~ json,
       let repository: Repository = Keys.repository <~~ json,
       let subject: NotificationSubject = Keys.subject <~~ json,
       let reason: NotificationReason = Keys.reason <~~ json,
       let unread: Bool = Keys.unread <~~ json,
-      let updatedAt: Date = Keys.updatedAt <~~ json,
+      let updatedAt: Date = Decoder.decode(dateISO8601ForKey: Keys.updatedAt)(json),
       let url: URL = Keys.url <~~ json else {
         return nil
     }
@@ -49,7 +49,7 @@ extension Notification: Decodable {
     self.unread = unread
     self.url = url
     self.updatedAt = updatedAt
-    self.lastReadAt = Keys.lastReadAt <~~ json 
+    self.lastReadAt = Decoder.decode(dateISO8601ForKey: Keys.lastReadAt)(json)
   }
 }
 

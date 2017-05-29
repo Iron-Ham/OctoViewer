@@ -29,14 +29,28 @@ class UserSpec: QuickSpec {
 
     describe("Decoding") {
       var json: JSON!
+      var user: User!
 
-      beforeEach {
-        json = parseJSONFile("AuthenticatedUser")
+      context("Authenticated User") {
+        beforeEach {
+          json = parseJSONFile("AuthenticatedUser")
+          user = User(json: json)
+        }
+
+        it("Can parse the user json successfully") {
+          expect(user).toNot(beNil())
+        }
       }
 
-      it("Can parse the user json successfully") {
-        let user = User(json: json)
-        expect(user).toNot(beNil())
+      context("from notification") {
+        beforeEach {
+          json = parseJSONFile("User_Notification")
+          user = User(json: json)
+        }
+
+        it("returns a non nil value") {
+          expect(user).toNot(beNil())
+        }
       }
 
       it("returns nil on arbitrary json") {

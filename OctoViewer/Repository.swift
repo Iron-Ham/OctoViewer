@@ -34,7 +34,7 @@ struct Repository {
 
 extension Repository: Decodable {
   init?(json: JSON) {
-    guard let id: Int = Keys.id <~~ json,
+    guard let id: Int = Keys.id <~~ json ?? json[Keys.id] as? Int,
       let name: String = Keys.name <~~ json,
       let owner: RepositoryOwner = Keys.owner <~~ json,
       let fullName: String = Keys.fullName <~~ json,

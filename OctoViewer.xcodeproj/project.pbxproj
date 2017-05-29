@@ -48,6 +48,17 @@
 		DC1FD4791EDCB53000850536 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4781EDCB53000850536 /* Notification.swift */; };
 		DC1FD47B1EDCB6D000850536 /* NotificationSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD47A1EDCB6D000850536 /* NotificationSubject.swift */; };
 		DC1FD47D1EDCB72100850536 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD47C1EDCB72100850536 /* NotificationType.swift */; };
+		DC1FD47F1EDCCA8500850536 /* NotificationSubjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD47E1EDCCA8500850536 /* NotificationSubjectSpec.swift */; };
+		DC1FD4811EDCCABB00850536 /* NotificationSubject.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1FD4801EDCCABB00850536 /* NotificationSubject.json */; };
+		DC1FD4821EDCCABB00850536 /* NotificationSubject.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1FD4801EDCCABB00850536 /* NotificationSubject.json */; };
+		DC1FD4841EDCCBCB00850536 /* Repository_Notification.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1FD4831EDCCBCB00850536 /* Repository_Notification.json */; };
+		DC1FD4851EDCCBCB00850536 /* Repository_Notification.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1FD4831EDCCBCB00850536 /* Repository_Notification.json */; };
+		DC1FD4871EDCCBDD00850536 /* RepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4861EDCCBDD00850536 /* RepositorySpec.swift */; };
+		DC1FD48A1EDCD11800850536 /* User_Notification.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1FD4891EDCD11800850536 /* User_Notification.json */; };
+		DC1FD48B1EDCD11D00850536 /* User_Notification.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1FD4891EDCD11800850536 /* User_Notification.json */; };
+		DC1FD48D1EDCD24500850536 /* NotificationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD48C1EDCD24500850536 /* NotificationSpec.swift */; };
+		DC1FD48F1EDCD3F700850536 /* Notification.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1FD48E1EDCD3F700850536 /* Notification.json */; };
+		DC1FD4901EDCD3F700850536 /* Notification.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1FD48E1EDCD3F700850536 /* Notification.json */; };
 		DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */; };
 		DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */; };
 		DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */; };
@@ -112,6 +123,13 @@
 		DC1FD4781EDCB53000850536 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		DC1FD47A1EDCB6D000850536 /* NotificationSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSubject.swift; sourceTree = "<group>"; };
 		DC1FD47C1EDCB72100850536 /* NotificationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
+		DC1FD47E1EDCCA8500850536 /* NotificationSubjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSubjectSpec.swift; sourceTree = "<group>"; };
+		DC1FD4801EDCCABB00850536 /* NotificationSubject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NotificationSubject.json; sourceTree = "<group>"; };
+		DC1FD4831EDCCBCB00850536 /* Repository_Notification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Repository_Notification.json; sourceTree = "<group>"; };
+		DC1FD4861EDCCBDD00850536 /* RepositorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorySpec.swift; sourceTree = "<group>"; };
+		DC1FD4891EDCD11800850536 /* User_Notification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = User_Notification.json; sourceTree = "<group>"; };
+		DC1FD48C1EDCD24500850536 /* NotificationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSpec.swift; sourceTree = "<group>"; };
+		DC1FD48E1EDCD3F700850536 /* Notification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Notification.json; sourceTree = "<group>"; };
 		DC23AFC21ED0E23B00D42C46 /* OctoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -196,6 +214,10 @@
 			isa = PBXGroup;
 			children = (
 				DC1FD46C1EDC920700850536 /* AuthenticatedUser.json */,
+				DC1FD4801EDCCABB00850536 /* NotificationSubject.json */,
+				DC1FD4831EDCCBCB00850536 /* Repository_Notification.json */,
+				DC1FD4891EDCD11800850536 /* User_Notification.json */,
+				DC1FD48E1EDCD3F700850536 /* Notification.json */,
 			);
 			name = "Stubbed Responses";
 			sourceTree = "<group>";
@@ -257,6 +279,9 @@
 				DC1FD4591ED9112100850536 /* LoginCoordinatorSpec.swift */,
 				DC1FD46E1EDC93A900850536 /* UserSpec.swift */,
 				DC1FD4711EDC950C00850536 /* SpecHelper.swift */,
+				DC1FD47E1EDCCA8500850536 /* NotificationSubjectSpec.swift */,
+				DC1FD4861EDCCBDD00850536 /* RepositorySpec.swift */,
+				DC1FD48C1EDCD24500850536 /* NotificationSpec.swift */,
 			);
 			path = OctoViewerTests;
 			sourceTree = "<group>";
@@ -453,11 +478,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1FD48F1EDCD3F700850536 /* Notification.json in Resources */,
+				DC1FD4841EDCCBCB00850536 /* Repository_Notification.json in Resources */,
 				DC1FD4701EDC93BB00850536 /* AuthenticatedUser.json in Resources */,
 				DC09F58E1ED89E480031B510 /* Home.storyboard in Resources */,
 				DC38A1021ED399EA00FDFAAF /* (null) in Resources */,
+				DC1FD48B1EDCD11D00850536 /* User_Notification.json in Resources */,
 				DC38A1011ED399EA00FDFAAF /* (null) in Resources */,
 				DC09F58A1ED88B120031B510 /* octicons.ttf in Resources */,
+				DC1FD4811EDCCABB00850536 /* NotificationSubject.json in Resources */,
 				DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */,
 				DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */,
 				DCB7DF901ED11953001FE652 /* Splash.storyboard in Resources */,
@@ -469,6 +498,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC1FD46D1EDC920700850536 /* AuthenticatedUser.json in Resources */,
+				DC1FD4851EDCCBCB00850536 /* Repository_Notification.json in Resources */,
+				DC1FD4901EDCD3F700850536 /* Notification.json in Resources */,
+				DC1FD4821EDCCABB00850536 /* NotificationSubject.json in Resources */,
+				DC1FD48A1EDCD11800850536 /* User_Notification.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +657,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC09F5A01ED8E2680031B510 /* MockSafariPresenter.swift in Sources */,
+				DC1FD48D1EDCD24500850536 /* NotificationSpec.swift in Sources */,
 				DC1FD4541ED8EC9A00850536 /* SafariPresenterSpec.swift in Sources */,
+				DC1FD47F1EDCCA8500850536 /* NotificationSubjectSpec.swift in Sources */,
 				DC1FD4721EDC950C00850536 /* SpecHelper.swift in Sources */,
 				DCB7DF9E1ED1277C001FE652 /* LaunchViewControllerSpec.swift in Sources */,
 				DC09F5671ED762BA0031B510 /* APIKeysSpec.swift in Sources */,
@@ -632,6 +667,7 @@
 				DC1FD4561ED8ECD500850536 /* MockUIApplication.swift in Sources */,
 				DC1FD45A1ED9112100850536 /* LoginCoordinatorSpec.swift in Sources */,
 				DC09F59E1ED8C2E60031B510 /* LaunchViewModelSpec.swift in Sources */,
+				DC1FD4871EDCCBDD00850536 /* RepositorySpec.swift in Sources */,
 				DC1FD4581ED8EE4000850536 /* AppDelegateViewModelSpec.swift in Sources */,
 				DC1FD46F1EDC93A900850536 /* UserSpec.swift in Sources */,
 			);

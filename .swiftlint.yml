@@ -41,5 +41,7 @@ identifier_name:
     - law
     - key
     - eye
-    - bug 
+    - bug
+    - id
+    - bio
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, emoji)

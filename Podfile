@@ -4,7 +4,9 @@ inhibit_all_warnings!
 
 def shared_pods
   pod 'Alamofire'
+  pod 'Gloss'
   pod 'Moya/RxSwift'
+  pod 'Moya-Gloss/RxSwift'
   pod 'ReachabilitySwift'
   pod 'ReusableViews'
   pod 'RxCocoa'
@@ -15,9 +17,6 @@ end
 def testing_pods
   pod 'Nimble'
   pod 'Quick'
-  # Not needed yet
-  # pod 'RxBlocking'
-  # pod 'RxTest'
 end
 
 target 'OctoViewer' do

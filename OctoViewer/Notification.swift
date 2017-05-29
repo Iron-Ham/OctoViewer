@@ -18,8 +18,8 @@
 //  limitations under the License.
 
 import Foundation
+import Gloss
 
-// TODO: Gloss
 struct Notification {
   let id: Int
   let repository: Repository
@@ -29,6 +29,28 @@ struct Notification {
   let updatedAt: Date
   let lastReadAt: Date?
   let url: URL
+}
+
+extension Notification: Decodable {
+  init?(json: JSON) {
+    guard let id: Int = Keys.id <~~ json,
+      let repository: Repository = Keys.repository <~~ json,
+      let subject: NotificationSubject = Keys.subject <~~ json,
+      let reason: NotificationReason = Keys.reason <~~ json,
+      let unread: Bool = Keys.unread <~~ json,
+      let updatedAt: Date = Keys.updatedAt <~~ json,
+      let url: URL = Keys.url <~~ json else {
+        return nil
+    }
+    self.id = id
+    self.repository = repository
+    self.subject = subject
+    self.reason = reason
+    self.unread = unread
+    self.url = url
+    self.updatedAt = updatedAt
+    self.lastReadAt = Keys.lastReadAt <~~ json 
+  }
 }
 
 private struct Keys {

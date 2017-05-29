@@ -19,11 +19,33 @@
 
 
 import Foundation
+import Gloss
 
-// TODO: Gloss
 struct NotificationSubject {
   let title: String
   let url: URL
   let latestCommentUrl: URL
   let type: NotificationType
+}
+
+extension NotificationSubject: Decodable {
+  init?(json: JSON) {
+    guard let title: String = Keys.title <~~ json,
+      let url: URL = Keys.url <~~ json,
+      let latestCommentUrl: URL = Keys.latestCommentUrl <~~ json,
+      let type: NotificationType = Keys.type <~~ json else {
+        return nil
+    }
+    self.title = title
+    self.url = url
+    self.latestCommentUrl = latestCommentUrl
+    self.type = type
+  }
+}
+
+private struct Keys {
+  static let title = "title"
+  static let url = "url"
+  static let latestCommentUrl = "latest_comment_url"
+  static let type = "type"
 }

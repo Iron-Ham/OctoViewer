@@ -20,7 +20,43 @@
 import Foundation
 import Gloss
 
-// TODO: Repo
+struct Repository {
+  let id: Int
+  let owner: RepositoryOwner
+  let name: String
+  let fullName: String
+  let description: String
+  let isPrivate: Bool
+  let isFork: Bool
+  let url: URL
+  let htmlUrl: URL
+}
+
+extension Repository: Decodable {
+  init?(json: JSON) {
+    guard let id: Int = Keys.id <~~ json,
+      let name: String = Keys.name <~~ json,
+      let owner: RepositoryOwner = Keys.owner <~~ json,
+      let fullName: String = Keys.fullName <~~ json,
+      let description: String = Keys.description <~~ json,
+      let isPrivate: Bool = Keys.private <~~ json,
+      let isFork: Bool = Keys.fork <~~ json,
+      let url: URL = Keys.url <~~ json,
+      let htmlUrl: URL = Keys.htmlUrl <~~ json else {
+        return nil
+    }
+
+    self.id = id
+    self.name = name
+    self.fullName = fullName
+    self.description = description
+    self.isPrivate = isPrivate
+    self.url = url
+    self.htmlUrl = htmlUrl
+    self.owner = owner
+    self.isFork = isFork
+  }
+}
 
 private struct Keys {
   static let id = "id"
@@ -60,7 +96,7 @@ private struct Keys {
   static let languagesUrl = "languages_url"
   static let sshUrl = "ssh_url"
   static let stargazersUrl = "stargazers_url"
-  static let statuses_url = "statuses_url"
+  static let statusesUrl = "statuses_url"
   static let subscribersUrl = "subscribers_url"
   static let subscriptionUrl = "subscription_url"
   static let svnUrl = "svn_url"

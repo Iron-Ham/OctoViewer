@@ -38,7 +38,11 @@ class UserSpec: QuickSpec {
         let user = User(json: json)
         expect(user).toNot(beNil())
       }
+
+      it("returns nil on arbitrary json") {
+        let user = User(json: ["Hello": "WORLD"])
+        expect(user).to(beNil())
+      }
     }
   }
 }
-

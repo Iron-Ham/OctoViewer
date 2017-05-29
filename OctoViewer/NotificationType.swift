@@ -1,5 +1,5 @@
 //
-//  NotificationReason.swift
+//  NotificationType.swift
 //  OctoViewer
 //
 //  Created by Hesham Salman on 5/29/17.
@@ -17,11 +17,11 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
+
 import Foundation
 
-enum NotificationReason: String {
-  case assign, author, comment, invitation, manual, mention, subscribed
-
-  case stateChange = "state_change"
-  case teamMention = "team_mention"
+enum NotificationType: String {
+  case issue = "Issue"
+  case pullRequest = "PullRequest"
+  case commit = "Commit"
 }

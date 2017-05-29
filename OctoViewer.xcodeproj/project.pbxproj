@@ -43,6 +43,11 @@
 		DC1FD46F1EDC93A900850536 /* UserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD46E1EDC93A900850536 /* UserSpec.swift */; };
 		DC1FD4701EDC93BB00850536 /* AuthenticatedUser.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1FD46C1EDC920700850536 /* AuthenticatedUser.json */; };
 		DC1FD4721EDC950C00850536 /* SpecHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4711EDC950C00850536 /* SpecHelper.swift */; };
+		DC1FD4751EDCAD0800850536 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4741EDCAD0800850536 /* Repository.swift */; };
+		DC1FD4771EDCB26100850536 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4761EDCB26100850536 /* Organization.swift */; };
+		DC1FD4791EDCB53000850536 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD4781EDCB53000850536 /* Notification.swift */; };
+		DC1FD47B1EDCB6D000850536 /* NotificationSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD47A1EDCB6D000850536 /* NotificationSubject.swift */; };
+		DC1FD47D1EDCB72100850536 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD47C1EDCB72100850536 /* NotificationType.swift */; };
 		DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */; };
 		DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */; };
 		DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */; };
@@ -102,6 +107,11 @@
 		DC1FD46C1EDC920700850536 /* AuthenticatedUser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AuthenticatedUser.json; sourceTree = "<group>"; };
 		DC1FD46E1EDC93A900850536 /* UserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSpec.swift; sourceTree = "<group>"; };
 		DC1FD4711EDC950C00850536 /* SpecHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecHelper.swift; sourceTree = "<group>"; };
+		DC1FD4741EDCAD0800850536 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		DC1FD4761EDCB26100850536 /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		DC1FD4781EDCB53000850536 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		DC1FD47A1EDCB6D000850536 /* NotificationSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSubject.swift; sourceTree = "<group>"; };
+		DC1FD47C1EDCB72100850536 /* NotificationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
 		DC23AFC21ED0E23B00D42C46 /* OctoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -314,6 +324,11 @@
 				DC1FD4511ED8EBC300850536 /* UIApplicationProtocol.swift */,
 				DC1FD4621EDC77E600850536 /* NotificationReason.swift */,
 				DC1FD4661EDC79F300850536 /* User.swift */,
+				DC1FD4741EDCAD0800850536 /* Repository.swift */,
+				DC1FD4761EDCB26100850536 /* Organization.swift */,
+				DC1FD4781EDCB53000850536 /* Notification.swift */,
+				DC1FD47A1EDCB6D000850536 /* NotificationSubject.swift */,
+				DC1FD47C1EDCB72100850536 /* NotificationType.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -574,6 +589,8 @@
 				DC09F5791ED7E3350031B510 /* AppDelegateViewModel.swift in Sources */,
 				DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */,
 				DCB7DF941ED11CEA001FE652 /* GitHubService.swift in Sources */,
+				DC1FD4751EDCAD0800850536 /* Repository.swift in Sources */,
+				DC1FD47D1EDCB72100850536 /* NotificationType.swift in Sources */,
 				DC1FD4671EDC79F300850536 /* User.swift in Sources */,
 				DC09F5821ED86D220031B510 /* HomeCoordinator.swift in Sources */,
 				DC09F49D1ED63D400031B510 /* GlobalFunctions.swift in Sources */,
@@ -582,6 +599,7 @@
 				DC09F59A1ED8BA300031B510 /* StyleGuide.swift in Sources */,
 				DC09F5981ED8B2F30031B510 /* IssuesViewController.swift in Sources */,
 				DC09F4981ED634B90031B510 /* Networking.swift in Sources */,
+				DC1FD47B1EDCB6D000850536 /* NotificationSubject.swift in Sources */,
 				DC09F57C1ED86C330031B510 /* Coordinator.swift in Sources */,
 				DCB7DFA01ED12B2E001FE652 /* OctoViewer.swift in Sources */,
 				DCB7DFA31ED1D622001FE652 /* LaunchViewModel.swift in Sources */,
@@ -594,7 +612,9 @@
 				DC1FD4521ED8EBC300850536 /* UIApplicationProtocol.swift in Sources */,
 				DC09F57E1ED86C770031B510 /* AppCoordinator.swift in Sources */,
 				DC09F5751ED789130031B510 /* SafariPresenter.swift in Sources */,
+				DC1FD4791EDCB53000850536 /* Notification.swift in Sources */,
 				DC09F5801ED86D090031B510 /* LoginCoordinator.swift in Sources */,
+				DC1FD4771EDCB26100850536 /* Organization.swift in Sources */,
 				DC09F5651ED75E080031B510 /* Observable+Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

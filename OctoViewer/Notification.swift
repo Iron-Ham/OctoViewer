@@ -1,5 +1,5 @@
 //
-//  NotificationReason.swift
+//  Notification.swift
 //  OctoViewer
 //
 //  Created by Hesham Salman on 5/29/17.
@@ -19,9 +19,25 @@
 
 import Foundation
 
-enum NotificationReason: String {
-  case assign, author, comment, invitation, manual, mention, subscribed
+// TODO: Gloss
+struct Notification {
+  let id: Int
+  let repository: Repository
+  let subject: NotificationSubject
+  let reason: NotificationReason
+  let unread: Bool
+  let updatedAt: Date
+  let lastReadAt: Date?
+  let url: URL
+}
 
-  case stateChange = "state_change"
-  case teamMention = "team_mention"
+private struct Keys {
+  static let id = "id"
+  static let repository = "repository"
+  static let subject = "subject"
+  static let reason = "reason"
+  static let unread = "unread"
+  static let updatedAt = "updated_at"
+  static let lastReadAt = "last_read_at"
+  static let url = "url"
 }

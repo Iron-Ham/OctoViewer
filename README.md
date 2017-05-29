@@ -1,4 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/heshamsalman/OctoViewer.png?label=ready&title=Ready)](http://waffle.io/heshamsalman/OctoViewer)
+[![Stories in Ready](https://badge.waffle.io/heshamsalman/OctoViewer.png?label=ready&title=Ready)](http://waffle.io/heshamsalman/OctoViewer) [![Build Status](https://travis-ci.org/heshamsalman/OctoViewer.svg?branch=master)](https://travis-ci.org/heshamsalman/OctoViewer)
 
 # OctoViewer: An Open-Source iOS GitHub Client
 OctoViewer is very much a **work in progress** at the moment and _is not ready for production_.

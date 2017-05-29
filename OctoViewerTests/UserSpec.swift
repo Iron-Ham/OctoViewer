@@ -27,7 +27,7 @@ import Gloss
 class UserSpec: QuickSpec {
   override func spec() {
 
-    describe("Instantiation from JSON") {
+    describe("Decoding") {
       var json: JSON!
 
       beforeEach {
@@ -44,5 +44,41 @@ class UserSpec: QuickSpec {
         expect(user).to(beNil())
       }
     }
+
+    describe("Encoding") {
+      var json: JSON!
+      var user: User!
+      var parsedJson: JSON!
+      beforeEach {
+        json = parseJSONFile("AuthenticatedUser")
+        user = User(json: json)
+        user.name = "Aku"
+        user.company = "World Domination Inc."
+        user.email = "TheUltimateEvil@Aku.com"
+        user.hireable = false
+        user.bio = "Long ago in a distant land, I, Aku, the shape-shifting Master of Darkness, unleashed an unspeakable evil! But a foolish samurai warrior wielding a magic sword stepped forth to oppose me. Before the final blow was struck, I tore open a portal in time and flung him into the future, where my evil is law! Now the fool seeks to return to the past, and undo the future that is Aku!"
+        parsedJson = user.toJSON()
+      }
+
+      it("creates a json") {
+        expect(parsedJson).toNot(beNil())
+      }
+
+      it("doesn't include a value for empty keys") {
+        user.name = nil
+        parsedJson = user.toJSON()
+        expect(parsedJson["name"]).to(beNil())
+      }
+
+      it("contains the new values") {
+        expect(parsedJson["name"] as? String).to(equal("Aku"))
+        expect(parsedJson["company"] as? String).to(equal("World Domination Inc."))
+        expect(parsedJson["email"] as? String).to(equal("TheUltimateEvil@Aku.com"))
+        expect(parsedJson["hireable"] as? Bool).to(equal(false))
+        expect(parsedJson["bio"] as? String).to(equal("Long ago in a distant land, I, Aku, the shape-shifting Master of Darkness, unleashed an unspeakable evil! But a foolish samurai warrior wielding a magic sword stepped forth to oppose me. Before the final blow was struck, I tore open a portal in time and flung him into the future, where my evil is law! Now the fool seeks to return to the past, and undo the future that is Aku!"))
+      }
+
+    }
+
   }
 }

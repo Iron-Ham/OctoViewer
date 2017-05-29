@@ -22,7 +22,7 @@ import Gloss
 
 typealias RepositoryOwner = User
 
-struct User: Glossy {
+struct User {
   let login: String
   let id: Int
   let avatarUrl: URL
@@ -39,20 +39,23 @@ struct User: Glossy {
   let receivedEventsUrl: URL
   let type: String
   let siteAdmin: Bool
-  let name: String?
-  let company: String?
-  let blogUrl: URL?
-  let location: String?
-  let email: String?
-  let hireable: Bool?
-  let bio: String
+  var name: String?
+  var company: String?
+  var blogUrl: URL?
+  var location: String?
+  var email: String?
+  var hireable: Bool?
+  var bio: String
   let publicRepos: Int?
   let publicGists: Int?
   let followers: Int?
   let following: Int?
   let createdAt: Date?
   let updatedAt: Date?
+}
 
+extension User: Glossy {
+  //swiftlint:disable function_body_length
   init?(json: JSON) {
     guard let login: String = Keys.login <~~ json,
       let id: Int = Keys.id <~~ json,
